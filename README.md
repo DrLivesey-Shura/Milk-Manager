@@ -34,6 +34,7 @@ The Milk Production Management Application is designed to streamline and automat
 - **Redux:** Manages and centralizes application state, ensuring consistency across components.
 - **React-router-dom:** Handles client-side routing for a seamless user experience.
 - **Chakra UI:** Utilized for styling, ensuring a visually appealing and user-friendly design.
+- **Vite:** Used as the build tool for fast and efficient development.
 
 ### Server-Side:
 
