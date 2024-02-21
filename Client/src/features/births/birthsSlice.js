@@ -6,13 +6,17 @@ const initialState = {
 };
 
 // get the births list
-export const getBirthsList = createAsyncThunk("births/getBirthsList", () => {
-  return fetch("/api/births")
-    .then((res) => res.json())
-    .catch((err) => {
+export const getBirthsList = createAsyncThunk(
+  "births/getBirthsList",
+  async () => {
+    try {
+      const res = await fetch("/api/births");
+      return await res.json();
+    } catch (err) {
       console.log(err);
-    });
-});
+    }
+  }
+);
 
 const birthsSlice = createSlice({
   name: "births",

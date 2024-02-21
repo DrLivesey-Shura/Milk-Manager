@@ -62,7 +62,12 @@ const HeaderPage = ({
           gap="2rem"
         >
           <Box className="field" width="18rem" mx="50px">
-            <Text display="inline-block" fontWeight="500" marginBottom="1rem">
+            <Text
+              color="#333333"
+              display="inline-block"
+              fontWeight="500"
+              marginBottom="1rem"
+            >
               Sort by
             </Text>
             <OptionsInput
@@ -80,7 +85,12 @@ const HeaderPage = ({
           gap="2rem"
         >
           <Box className="field" width="18rem" mx="50px">
-            <Text display="inline-block" fontWeight="500" marginBottom="1rem">
+            <Text
+              display="inline-block"
+              fontWeight="500"
+              color="#333333"
+              marginBottom="1rem"
+            >
               Filter by
             </Text>
 
