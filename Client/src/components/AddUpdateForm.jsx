@@ -1,18 +1,7 @@
 import OptionsInput from "./OptionsInput";
 import DateInput from "./DateInput";
 import TextInput from "./TextInput";
-import {
-  Box,
-  Button,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { Box, Button, useDisclosure } from "@chakra-ui/react";
 
 const AddUpdateForm = ({
   title,
@@ -21,8 +10,6 @@ const AddUpdateForm = ({
   doTheOperation,
   update,
 }) => {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-
   const generateInput = (parameter) => {
     switch (parameter.type) {
       case "text":
@@ -70,6 +57,7 @@ const AddUpdateForm = ({
               justifyContent="space-between"
               alignItems="center"
               gap="1rem"
+              color="#333333"
               key={index}
             >
               <label>{parameter.field}</label>

@@ -41,7 +41,7 @@ function OptionsInput({ options, optionValue, setOptionValue }) {
             outline="none"
             borderRadius=" 5px"
             backgroundColor="transparent"
-            color="#555555"
+            color="#333333"
             cursor="pointer"
             textAlign=" center"
             type="text"
